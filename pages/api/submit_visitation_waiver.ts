@@ -455,7 +455,8 @@ export default async function handler(req, res) {
 
 		const sendEmailCommand = createSendEmailCommand(
 			req.body.email,
-			'caninecare@dogsocietysd.com',
+			'jared.dahlke@protonmail.com',
+			//	'caninecare@dogsocietysd.com',
 			req.body.firstName,
 			req.body.lastName,
 			req.body.phone,
@@ -478,9 +479,9 @@ export default async function handler(req, res) {
 
 		try {
 			sesClient.send(sendEmailCommand)
-			if (process.env.NODE_ENV === 'production') {
-				sesClient.send(sendEmailCommand2)
-			}
+			// if (process.env.NODE_ENV === 'production') {
+			// 	sesClient.send(sendEmailCommand2)
+			// }
 		} catch (err) {
 			console.log('Error', err)
 		}
