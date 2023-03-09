@@ -144,8 +144,8 @@ export default function VisitationWaiver() {
 						representative, my dog will be considered abandoned, and all
 						necessary steps will be taken to turn the dog over to the proper
 						authorities and/or animal rescue agency. All boarding expenses
-						within the initial 24 hours will be the owner's responsibility to
-						pay.
+						within the initial 24 hours will be the owner&apos;s responsibility
+						to pay.
 					</p>
 					<p>
 						14. I agree to indemnify and hold harmless, THE DOG SOCIETY for any
