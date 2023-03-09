@@ -435,18 +435,18 @@ export default function VisitationWaiver() {
 					<div className='mt-5'>
 						<p className='text-xs bg-gray-100 text-gray-500 p-3 rounded-md'>
 							By clicking/tapping/touching/selecting or otherwise interacting
-							with the "Submit" button, you are consenting to signing this
-							Document electronically. You agree your electronic signature
-							("E-Signature") is the legal equivalent of your manual signature
-							on this Document. You consent to be legally bound by this
-							Document's agreement(s), acknowledgement(s), policy(ies),
-							disclosure(s), consent term(s) and condition(s). You agree that no
-							certification authority or other third party verification is
-							necessary to validate your E-Signature and that the lack of such
-							certification or third party verification will not in any way
-							affect the enforceability of your E-Signature. You may request a
-							paper version of an electronic record by writing to us. Your
-							current valid email is required for all communications.
+							with the &quot;Submit&quot; button, you are consenting to signing
+							this Document electronically. You agree your electronic signature
+							(&quot;E-Signature&quot;) is the legal equivalent of your manual
+							signature on this Document. You consent to be legally bound by
+							this Document&apos;s agreement(s), acknowledgement(s),
+							policy(ies), disclosure(s), consent term(s) and condition(s). You
+							agree that no certification authority or other third party
+							verification is necessary to validate your E-Signature and that
+							the lack of such certification or third party verification will
+							not in any way affect the enforceability of your E-Signature. You
+							may request a paper version of an electronic record by writing to
+							us. Your current valid email is required for all communications.
 						</p>
 					</div>
 				</div>
