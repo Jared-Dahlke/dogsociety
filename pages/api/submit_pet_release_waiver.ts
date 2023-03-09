@@ -181,7 +181,7 @@ const createSendEmailCommand = (
 							</p>
 		
 							<h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-								Grooming Release Form{' '}
+								Grooming Release Form
 							</h1>
 							<p>
 								Health or medical problems: Occasionally, grooming can expose a
