@@ -226,7 +226,7 @@ export default function VisitationWaiver() {
 						cuts, nicks, scratches, quicking of nails, etc. In most cases this
 						can occur, you will be notified of the accident. If The Dog Society
 						LLC and any of its members, managers, agents, employees, and staff
-						(collectively “The Dog Society'') feels it is serious, and the owner
+						(collectively “The Dog Society“) feels it is serious, and the owner
 						is not on-site, the owner will be notified and The Dog Society will
 						seek immediate veterinary care for your pet with the closest vet
 						clinic. Owner agrees not to hold The Dog Society responsible for any
@@ -641,6 +641,13 @@ export default function VisitationWaiver() {
 					setLastName('')
 					setEmail('')
 					setPhone('')
+					setAddress('')
+					setCity('')
+					setState('')
+					setZip('')
+					setApproveTreatmentBy('')
+					setVet('')
+					setDogs('')
 					setSignature('')
 					setSuccess(false)
 				}}
