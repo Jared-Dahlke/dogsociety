@@ -372,6 +372,7 @@ export default function VisitationWaiver() {
 										<div className='mt-2 sm:col-span-2 sm:mt-0'>
 											<input
 												type='text'
+												pattern='\d*'
 												value={phone}
 												onChange={(e) => setPhone(e.target.value)}
 												name='postal-code'
