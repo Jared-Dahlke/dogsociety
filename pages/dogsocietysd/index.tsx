@@ -10,6 +10,7 @@ import Image from 'next/image'
 import Picture from '../../public/dogsociety.jpeg'
 
 export default function Home({ user: session }) {
+	const router = useRouter()
 	const valid =
 		session?.user?.email?.includes('jared.dahlke@gmail.com') ||
 		session?.user?.email?.toLowerCase()?.includes('dogsocietysd.com')
@@ -32,7 +33,12 @@ export default function Home({ user: session }) {
 
 	if (!valid) {
 		return (
-			<div className='isolate bg-white h-screen flex flex-col justify-center items-center'>
+			<div className='isolate bg-white h-screen flex flex-col justify-center items-center relative'>
+				<button
+					className=' absolute top-4 left-4 rounded-md bg-gray-400 py-2 px-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+					onClick={() => router.push('/dogsocietysd/waivers')}>
+					Go To Waivers
+				</button>
 				<div className='text-xl mb-12'>Waiver Administration Portal</div>
 				<div className='mb-8 flex justify-center'>
 					<Image
