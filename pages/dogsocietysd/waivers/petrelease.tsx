@@ -82,10 +82,10 @@ export default function VisitationWaiver() {
 				<div className='mt-10 max-w-2xl flex flex-col gap-3'>
 					<p>
 						I, [ First Name ] [ Last Name ], of (address) [ Address ], [ City ],
-						[ State ], [ Zip ]. This day of (Date) 3/8/2023, pursuant to the
-						laws of California, willfully and voluntarily authorize the bear of
-						this document [THE DOG SOCIETY] with lawful authority to temporarily
-						act on my behalf for the care of my [ Name, # of dogs ] (name, # of
+						[ State ], [ Zip ]. This day of [ Date ], pursuant to the laws of
+						California, willfully and voluntarily authorize the bear of this
+						document [THE DOG SOCIETY] with lawful authority to temporarily act
+						on my behalf for the care of my [ Name, # of dogs ] (name, # of
 						dogs) pet(s). SECTION 1: GENERAL GRANT OF POWERS: The bearer of this
 						document may act for me and in my name in any way that could as if I
 						were personally present and exercising such power with respect to my
@@ -117,7 +117,7 @@ export default function VisitationWaiver() {
 						party who acts in good faith reliance on THE DOG SOCIETY directions
 						concerning my pets. SECTION 4: TERMINATION OF POWER: THE DOG
 						SOCIETY’s powers and authority enumerated herein shall be effective
-						from 3/8/2023 until revoked by me or until such power is revoked
+						from [ Date ] until revoked by me or until such power is revoked
 						automatically by operation of law.
 					</p>
 
@@ -672,6 +672,7 @@ export default function VisitationWaiver() {
 					setZip('')
 					setApproveTreatmentBy('')
 					setVet('')
+					setAmount('')
 					setDogs('')
 					setSignature('')
 					setSuccess(false)
