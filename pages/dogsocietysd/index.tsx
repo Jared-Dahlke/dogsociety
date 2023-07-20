@@ -34,6 +34,18 @@ export default function Home({ user: session }) {
 		}
 	)
 
+	const data = {
+		Visitation: visitationWaiversQuery?.data || [],
+		PetRelease: petReleaseWaiversQuery?.data || []
+	}
+
+	const [activeTab, setActiveTab] = React.useState('Visitation')
+	const tabs = [{ name: 'Visitation' }, { name: 'Pet Release' }]
+
+	function classNames(...classes) {
+		return classes.filter(Boolean).join(' ')
+	}
+
 	if (!valid) {
 		return (
 			<div className='isolate bg-white h-screen flex flex-col justify-center items-center relative'>
@@ -59,18 +71,6 @@ export default function Home({ user: session }) {
 				</button>
 			</div>
 		)
-	}
-
-	const data = {
-		Visitation: visitationWaiversQuery?.data || [],
-		PetRelease: petReleaseWaiversQuery?.data || []
-	}
-
-	const [activeTab, setActiveTab] = React.useState('Visitation')
-	const tabs = [{ name: 'Visitation' }, { name: 'Pet Release' }]
-
-	function classNames(...classes) {
-		return classes.filter(Boolean).join(' ')
 	}
 
 	return (
