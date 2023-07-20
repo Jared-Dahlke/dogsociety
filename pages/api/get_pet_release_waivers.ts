@@ -5,7 +5,11 @@ export default async function handler(req, res) {
 	try {
 		const client = await clientPromise
 		const db = client.db(process.env.NEXT_PUBLIC_DATABASE_NAME)
-		const result = await db.collection('petreleasewaivers').find({}).toArray()
+		const result = await db
+			.collection('petreleasewaivers')
+			.find({})
+			.sort({ createDate: -1 })
+			.toArray()
 
 		res.json(result)
 	} catch (e) {
