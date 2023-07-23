@@ -17,6 +17,7 @@ const createSendEmailCommand = (
 	vet,
 	approveTreatmentBy,
 	email,
+	emailMarketing,
 	signature
 ) => {
 	return new SendEmailCommand({
@@ -680,6 +681,18 @@ const createSendEmailCommand = (
                                         <input disabled type="text" value="${approveTreatmentBy}" name="postal-code" id="postal-code" autocomplete="postal-code" class="placeholder-text-gray-400 focus-ring-2 focus-ring-inset focus-ring-indigo-600 sm-max-w-xs sm-text-sm sm-leading-6" style="border: 0; display: block; width: 100%; max-width: 256px; border-radius: 6px; border-width: 0px; padding-top: 6px; padding-bottom: 6px; color: #111827; --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color); --tw-ring-inset: inset; --tw-ring-opacity: 1; --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity)); box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
                                       </div>
                                     </div>
+
+                                    <div style="gap: 4px; position: relative; margin-top: 16px; display: flex; align-items: flex-start">
+                                    <div style="display: flex; height: 24px; align-items: center">                              </div>
+                                    <div style="margin-left: 12px">
+                                      <label style="margin-top: 10px; font-size: 14px; font-weight: 500; line-height: 24px; color: #111827" htmlfor="candidates">
+                                        Email Marketing?  ${
+																					emailMarketing ? 'YES' : 'NO'
+																				}
+                                      </label>                              </div>
+                                  </div>
+
+                                  
                                   </div>
                                 </div>
                               </div>
@@ -805,6 +818,7 @@ export default async function handler(req, res) {
 			req.body.vet,
 			req.body.approveTreatmentBy,
 			req.body.email,
+			req.body.emailMarketing,
 			req.body.signature
 		)
 

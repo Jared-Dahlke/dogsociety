@@ -23,6 +23,7 @@ export default function VisitationWaiver() {
 	const [approveTreatmentBy, setApproveTreatmentBy] = useState('')
 	const [signature, setSignature] = useState('')
 	const [loading, setLoading] = useState(false)
+	const [emailMarketing, setEmailMarketing] = useState(true)
 
 	const submitIsEnabled =
 		firstName &&
@@ -59,6 +60,7 @@ export default function VisitationWaiver() {
 				vet,
 				approveTreatmentBy,
 				signature,
+				emailMarketing,
 				createDate: new Date()
 			})
 			setSuccess(true)
@@ -585,6 +587,29 @@ export default function VisitationWaiver() {
 												autoComplete='postal-code'
 												className='block w-full max-w-lg rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6'
 											/>
+										</div>
+									</div>
+
+									<div className='relative flex items-start mt-4'>
+										<div className='flex h-6 items-center'>
+											<input
+												id='candidates'
+												name='candidates'
+												type='checkbox'
+												checked={emailMarketing}
+												onChange={(e) => setEmailMarketing(e.target.checked)}
+												className='h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'
+											/>
+										</div>
+										<div className='ml-3'>
+											<label
+												htmlFor='candidates'
+												className='text-sm font-medium leading-6 text-gray-900'>
+												Email Marketing
+											</label>
+											<p className='text-sm text-gray-500'>
+												I would like to receive email marketing.
+											</p>
 										</div>
 									</div>
 								</div>

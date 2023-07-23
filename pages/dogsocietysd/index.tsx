@@ -280,6 +280,11 @@ export default function Home({ user: session }) {
 											<th
 												scope='col'
 												className='py-3.5 px-3 text-left text-sm font-semibold text-gray-900'>
+												Wants email marketing
+											</th>
+											<th
+												scope='col'
+												className='py-3.5 px-3 text-left text-sm font-semibold text-gray-900'>
 												Signature
 											</th>
 
@@ -319,6 +324,13 @@ export default function Home({ user: session }) {
 												</td>
 												<td className='whitespace-nowrap py-4 px-3 text-sm text-gray-500'>
 													{waiver.approveTreatmentBy}
+												</td>
+												<td className='whitespace-nowrap py-4 px-3 text-sm text-gray-500'>
+													{waiver.emailMarketing === undefined
+														? '-'
+														: waiver.emailMarketing
+														? 'Yes'
+														: 'No'}
 												</td>
 												<td className='whitespace-nowrap py-4 px-3 text-sm text-gray-500'>
 													{waiver.signature}
